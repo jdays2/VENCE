@@ -21,8 +21,8 @@ function App() {
           <FaSearch />
         </div>
       </header>
-      <section>
-        <div>
+      <section className="slider">
+        <div className="slider-content">
           <span>29.Jun.2022</span>
           <h1>I Like to Keep Things Simple to Appreciate the Details</h1>
           <p>
