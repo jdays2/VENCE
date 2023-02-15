@@ -7,24 +7,26 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="header__logo">
-          <div>
+          <div className="header__logo_title">
             <span>VENCE</span>
-            <span>.</span>
+            <span className="header__logo_title dot">.</span>
           </div>
         </div>
         <div className="header__nav">
-          <div>Home</div>
-          <div>Inspiration</div>
-          <div>Courses</div>
-          <div>Blog</div>
+          <div className="header__nav-item">Home</div>
+          <div className="header__nav-item">Inspiration</div>
+          <div className="header__nav-item">Courses</div>
+          <div className="header__nav-item">Blog</div>
           <div>|</div>
-          <FaSearch />
+          <FaSearch className="header__nav-icon" />
         </div>
       </header>
       <section className="slider">
         <div className="slider-content">
           <span>29.Jun.2022</span>
-          <h1>I Like to Keep Things Simple to Appreciate the Details</h1>
+          <h1 className="slider-content__title">
+            I Like to Keep Things Simple to Appreciate the Details
+          </h1>
           <p>
             Many years ago, I worked for my parents who own a video production
             company.

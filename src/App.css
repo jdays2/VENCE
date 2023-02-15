@@ -6,7 +6,8 @@
 .App {
   width: 1440px;
   margin: 0 auto;
-  color: white;
+  color: rgba(248, 249, 250, 1);
+  font-family: "Poppins";
 }
 
 .header {
@@ -17,11 +18,55 @@
   margin: 36px 100px;
 }
 
+.header__logo {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.header__logo_title {
+  color: rgba(248, 249, 250, 1);
+  transition: 0.3s;
+}
+
+.header__logo_title:hover {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dot {
+  color: rgba(221, 190, 169, 1);
+}
+
 .header__nav {
   width: 305px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgba(248, 249, 250, 0.5);
+}
+
+.header__nav-item {
+  transition: 0.3s;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+.header__nav-item:hover {
+  color: rgba(248, 249, 250, 1);
+  transition: 0.3s;
+  border-bottom: 2px solid rgba(221, 190, 169, 1);
+  cursor: pointer;
+}
+
+.header__nav-icon {
+  transition: 0.3s;
+}
+
+.header__nav-icon:hover {
+  color: rgba(248, 249, 250, 1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .slider {
@@ -32,8 +77,27 @@
 }
 
 .slider-content {
-  position: relative;
+  position: absolute;
+
   width: 605px;
-  padding-top: 330px;
+  height: 170px;
+  margin-top: 330px;
   margin-left: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
 }
+
+.slider-content__title {
+  width: 605px;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+@font-family: "Poppins", sans-serif;
