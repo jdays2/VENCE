@@ -60,6 +60,7 @@ function App() {
             <div className="articles__card">
               <img src={sample} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
@@ -77,6 +78,7 @@ function App() {
             <div className="articles__card">
               <img src={the} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
@@ -94,6 +96,7 @@ function App() {
             <div className="articles__card">
               <img src={apartamento} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
@@ -111,6 +114,7 @@ function App() {
             <div className="articles__card">
               <img src={alessandro} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
@@ -128,6 +132,7 @@ function App() {
             <div className="articles__card">
               <img src={aron} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
@@ -145,6 +150,7 @@ function App() {
             <div className="articles__card">
               <img src={renzo} />
               <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-hover"></div>
               <div className="articles__card-content-wrapper">
                 <span className="articles__card-date">29.Jun.2021</span>
                 <h2 className="articles__card-title">
