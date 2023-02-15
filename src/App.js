@@ -1,26 +1,35 @@
 import "./App.css";
 
 import { FaSearch } from "react-icons/fa";
+import sample from "./assets/img/Card Mango_Big Title.png";
+import the from "./assets/img/second.png";
+import apartamento from "./assets/img/apartamento.png";
+import alessandro from "./assets/img/alessandro.png";
+import aron from "./assets/img/aron.png";
+import renzo from "./assets/img/renzo.png";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <div className="header__logo">
-          <div className="header__logo_title">
-            <span>VENCE</span>
-            <span className="header__logo_title dot">.</span>
+      <div className="header-wrapper">
+        <header className="header">
+          <div className="header__logo">
+            <div className="header__logo_title">
+              <span>VENCE</span>
+              <span className="header__logo_title dot">.</span>
+            </div>
           </div>
-        </div>
-        <div className="header__nav">
-          <div className="header__nav-item">Home</div>
-          <div className="header__nav-item">Inspiration</div>
-          <div className="header__nav-item">Courses</div>
-          <div className="header__nav-item">Blog</div>
-          <div>|</div>
-          <FaSearch className="header__nav-icon" />
-        </div>
-      </header>
+
+          <div className="header__nav">
+            <div className="header__nav-item">Home</div>
+            <div className="header__nav-item">Inspiration</div>
+            <div className="header__nav-item">Courses</div>
+            <div className="header__nav-item">Blog</div>
+            <div>|</div>
+            <FaSearch className="header__nav-icon" />
+          </div>
+        </header>
+      </div>
       <section className="slider">
         <div className="slider-content">
           <span>29.Jun.2022</span>
@@ -33,174 +42,125 @@ function App() {
           </p>
         </div>
       </section>
-      <section>
-        <div>
-          <div>
-            <span>Categories</span>
-            <span>+</span>
-          </div>
-          <div>
-            <span>3 Column</span>
-            <span>4 Column</span>
-          </div>
-          <div>
-            <img />
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
+      <section className="acticles">
+        <div className="acticles__content-wrapper">
+          <div className="acticles__content-filters-wrapper">
+            <div className="acticles__content-filters">
+              <span>Categories</span>
+              <span>+</span>
             </div>
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
-            </div>
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
-            </div>
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
-            </div>
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
-            </div>
-            <div>
-              <span>29.Jun.2021</span>
-              <h2>Instagram artists with great photography skills</h2>
-              <p>
-                Many years ago, I worked for my parents who own a video
-                production company.
-              </p>
-              <span>By: Peter Rowardson</span>
+            <div className="acticles__content-filters">
+              <span>3 Column</span>
+              <span className="acticles__content-filters unactive">
+                4 Column
+              </span>
             </div>
           </div>
-        </div>
-        <button>More Articles</button>
-      </section>
-      <section>
-        <div>
-          <h3>Featured Topics</h3>
-          <div>
-            <img />
-            <div>
-              <span>29.Jun.2021</span>
-              <h4>A beautiful solo trip to the Lake Baikal</h4>
-              <p>
-                Leather detail shoulder contrastic colour contour stunning
-                silhouette working peplum.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img />
-            <div>
-              <span>29.Jun.2021</span>
-              <h4>A beautiful solo trip to the Lake Baikal</h4>
-              <p>
-                Leather detail shoulder contrastic colour contour stunning
-                silhouette working peplum.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img />
-            <div>
-              <span>29.Jun.2021</span>
-              <h4>A beautiful solo trip to the Lake Baikal</h4>
-              <p>
-                Leather detail shoulder contrastic colour contour stunning
-                silhouette working peplum.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p>20 unexpected destinations for your next trip</p>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h5>It’s a Big World</h5>
-          <div>
-            <div>
-              <img />
-              <div>
-                <p>29.Jun.2021</p>
-                <h6>
-                  Artist Melissa Kitty Jarram is updating Greek myths for 2022
-                </h6>
-                <p>
+          <div className="articles__content">
+            <div className="articles__card">
+              <img src={sample} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  Instagram artists with great photography skills
+                </h2>
+                <p className="articles__card-subject">
                   Many years ago, I worked for my parents who own a video
                   production company.
                 </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
               </div>
             </div>
-            <div>
-              <img />
-              <div>
-                <p>29.Jun.2021</p>
-                <h6>
-                  Artist Melissa Kitty Jarram is updating Greek myths for 2022
-                </h6>
-                <p>
+            <div className="articles__card">
+              <img src={the} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  The 20 best creative & strong handmade of 2022
+                </h2>
+                <p className="articles__card-subject">
                   Many years ago, I worked for my parents who own a video
                   production company.
                 </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
               </div>
             </div>
-            <div>
-              <img />
-              <div>
-                <p>29.Jun.2021</p>
-                <h6>
-                  Artist Melissa Kitty Jarram is updating Greek myths for 2022
-                </h6>
-                <p>
+            <div className="articles__card">
+              <img src={apartamento} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  Apartamento at ten: A decade of celebrating the everyday
+                </h2>
+                <p className="articles__card-subject">
                   Many years ago, I worked for my parents who own a video
                   production company.
                 </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
               </div>
             </div>
-            <div>
-              <img />
-              <div>
-                <p>29.Jun.2021</p>
-                <h6>
-                  Artist Melissa Kitty Jarram is updating Greek myths for 2022
-                </h6>
-                <p>
+            <div className="articles__card">
+              <img src={alessandro} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  Alessandro Novelli’s animation plays with ANDRE
+                </h2>
+                <p className="articles__card-subject">
                   Many years ago, I worked for my parents who own a video
                   production company.
                 </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
+              </div>
+            </div>
+            <div className="articles__card">
+              <img src={aron} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  Aron Klein’s captivating images of the UDEA
+                </h2>
+                <p className="articles__card-subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
+              </div>
+            </div>
+            <div className="articles__card">
+              <img src={renzo} />
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="articles__card-content-wrapper">
+                <span className="articles__card-date">29.Jun.2021</span>
+                <h2 className="articles__card-title">
+                  Renzo Patton combines design and nature
+                </h2>
+                <p className="articles__card-subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+                <div className="articles__card-line"></div>
+                <div />
+                <span className="articles__card-by">By: Peter Rowardson</span>
               </div>
             </div>
           </div>
+          <button className="articles__button">More Articles</button>
         </div>
       </section>
       <footer>
