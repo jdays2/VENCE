@@ -1,5 +1,4 @@
 import "./App.css";
-import ImageSlider, { Slide } from "react-auto-image-slider";
 
 import { FaSearch } from "react-icons/fa";
 import sample from "./assets/img/Card Mango_Big Title.png";
@@ -15,11 +14,9 @@ import sliderOne from "./assets/img/sliderImg.png";
 import sliderTwo from "./assets/img/sliderImg2.png";
 import sliderTree from "./assets/img/sliderImg3.png";
 
-function App() {
-  setTimeout(() => {
-    console.log("hello");
-  }, 2000);
+import sample1 from "./assets/img/109164.png";
 
+function App() {
   return (
     <div className="App">
       <div className="header-wrapper">
@@ -42,19 +39,6 @@ function App() {
         </header>
       </div>
       <section className="slider">
-        {/* <div className="slider-root">
-          <ImageSlider effectDelay={500} autoPlayDelay={3000}>
-            <Slide>
-              <img src={sliderOne} />
-            </Slide>
-            <Slide>
-              <img src={sliderTwo} />
-            </Slide>
-            <Slide>
-              <img src={sliderTree} />
-            </Slide>
-          </ImageSlider>
-        </div> */}
         <div className="slider-content">
           <span>29.Jun.2022</span>
           <h1 className="slider-content__title">
@@ -260,17 +244,19 @@ function App() {
         </div>
       </section>
 
-      <footer>
-        <div>
-          <h7>VENCE Studio.</h7>
+      <footer className="footer">
+        <div className="footer-nav">
+          <h7 className="footer-nav__logo">
+            VENCE Studio<span>.</span>
+          </h7>
           <div>
-            <span>About Studio</span>
-            <span>Archive</span>
-            <span>Contact Us</span>
+            <span className="footer-nav_item">About Studio</span>
+            <span className="footer-nav_item">Archive</span>
+            <span className="footer-nav_item">Contact Us</span>
           </div>
         </div>
-        <div></div>
-        <div>
+        <div className="footer-line"></div>
+        <div className="footer-nav">
           <span>1088, North Street, Alexandria, AU</span>
           <span>© 2022, All Rights Reserved</span>
         </div>
