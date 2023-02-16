@@ -1,4 +1,5 @@
 import "./App.css";
+import ImageSlider, { Slide } from "react-auto-image-slider";
 
 import { FaSearch } from "react-icons/fa";
 import sample from "./assets/img/Card Mango_Big Title.png";
@@ -10,8 +11,15 @@ import renzo from "./assets/img/renzo.png";
 import beautiful from "./assets/img/aBeautiful.png";
 import incredible from "./assets/img/incredible.png";
 import richard from "./assets/img/richard.png";
+import sliderOne from "./assets/img/sliderImg.png";
+import sliderTwo from "./assets/img/sliderImg2.png";
+import sliderTree from "./assets/img/sliderImg3.png";
 
 function App() {
+  setTimeout(() => {
+    console.log("hello");
+  }, 2000);
+
   return (
     <div className="App">
       <div className="header-wrapper">
@@ -34,6 +42,19 @@ function App() {
         </header>
       </div>
       <section className="slider">
+        {/* <div className="slider-root">
+          <ImageSlider effectDelay={500} autoPlayDelay={3000}>
+            <Slide>
+              <img src={sliderOne} />
+            </Slide>
+            <Slide>
+              <img src={sliderTwo} />
+            </Slide>
+            <Slide>
+              <img src={sliderTree} />
+            </Slide>
+          </ImageSlider>
+        </div> */}
         <div className="slider-content">
           <span>29.Jun.2022</span>
           <h1 className="slider-content__title">
@@ -178,6 +199,7 @@ function App() {
           <div className="featured-topics__cards-wrapper">
             <div className="featured-topics__card">
               <img src={beautiful} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
               <div className="featured-topics__card-content">
                 <span className="featured-topics__card-content_date">
                   29.Jun.2021
@@ -193,6 +215,7 @@ function App() {
             </div>
             <div className="featured-topics__card">
               <img src={incredible} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
               <div className="featured-topics__card-content">
                 <span className="featured-topics__card-content_date">
                   29.Jun.2021
@@ -208,6 +231,7 @@ function App() {
             </div>
             <div className="featured-topics__card">
               <img src={richard} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
               <div className="featured-topics__card-content">
                 <span className="featured-topics__card-content_date">
                   29.Jun.2021
