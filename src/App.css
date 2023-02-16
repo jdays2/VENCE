@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+img {
+  width: 100%;
+}
+
 .App {
   width: 1440px;
   margin: 0 auto;
@@ -86,6 +90,8 @@
   width: 1440px;
   height: 600px;
   background-image: url(./assets/img/sliderImg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   margin-bottom: 100px;
 }
@@ -228,6 +234,7 @@
 .articles__button {
   margin: 0 auto;
   margin-top: 15px;
+  margin-bottom: 100px;
   color: rgba(248, 249, 250, 1);
   width: 180px;
   height: 40px;
@@ -245,4 +252,100 @@
 
 .articles__button:hover {
   background: rgba(204, 213, 174, 1);
+}
+
+.featured-topics {
+  width: 1440px;
+  background-color: rgba(33, 37, 41, 1);
+  display: flex;
+}
+
+.featured-topics__content {
+  width: 735px;
+  height: 903px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: rgba(248, 249, 250, 1);
+}
+
+.featured-topics__content-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 20px;
+
+  margin-left: 100px;
+
+  margin-bottom: 60px;
+}
+
+.featured-topics__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-topics__card {
+  margin-left: 100px;
+  width: 498px;
+  height: 181px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.featured-topics__card-img {
+  width: 181px;
+}
+
+.featured-topics__card-content {
+  width: 287px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.featured-topics__card-content_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.featured-topics__second-content {
+  width: 705px;
+  height: 903px;
+  background-image: url(./assets/img/unexpected.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-topics__second-content-wrapper {
+  width: 393px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.featured-topics__second-content-title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
 }

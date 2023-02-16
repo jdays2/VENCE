@@ -7,6 +7,9 @@ import apartamento from "./assets/img/apartamento.png";
 import alessandro from "./assets/img/alessandro.png";
 import aron from "./assets/img/aron.png";
 import renzo from "./assets/img/renzo.png";
+import beautiful from "./assets/img/aBeautiful.png";
+import incredible from "./assets/img/incredible.png";
+import richard from "./assets/img/richard.png";
 
 function App() {
   return (
@@ -169,6 +172,70 @@ function App() {
           <button className="articles__button">More Articles</button>
         </div>
       </section>
+      <section className="featured-topics">
+        <div className="featured-topics__content">
+          <h3 className="featured-topics__content-title">Featured Topics</h3>
+          <div className="featured-topics__cards-wrapper">
+            <div className="featured-topics__card">
+              <img src={beautiful} className="featured-topics__card-img" />
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  A beautiful solo trip to the Lake Baikal
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
+            <div className="featured-topics__card">
+              <img src={incredible} className="featured-topics__card-img" />
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  Incredible architecture inspired by nature
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
+            <div className="featured-topics__card">
+              <img src={richard} className="featured-topics__card-img" />
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  Richard Norton photorealistic rendering as real photos
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="featured-topics__second-content">
+          <div className="featured-topics__second-content-wrapper">
+            <h4 className="featured-topics__second-content-title">
+              20 unexpected destinations for your next trip
+            </h4>
+            <p className="featured-topics__second-content-subject">
+              Black knicker lining concealed back zip fasten swing style high
+              waisted double layer full pattern floral.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div>
           <h7>VENCE Studio.</h7>
