@@ -7,6 +7,14 @@ import apartamento from "./assets/img/apartamento.png";
 import alessandro from "./assets/img/alessandro.png";
 import aron from "./assets/img/aron.png";
 import renzo from "./assets/img/renzo.png";
+import beautiful from "./assets/img/aBeautiful.png";
+import incredible from "./assets/img/incredible.png";
+import richard from "./assets/img/richard.png";
+import sliderOne from "./assets/img/sliderImg.png";
+import sliderTwo from "./assets/img/sliderImg2.png";
+import sliderTree from "./assets/img/sliderImg3.png";
+
+import sample1 from "./assets/img/109164.png";
 
 function App() {
   return (
@@ -169,17 +177,86 @@ function App() {
           <button className="articles__button">More Articles</button>
         </div>
       </section>
-      <footer>
-        <div>
-          <h7>VENCE Studio.</h7>
-          <div>
-            <span>About Studio</span>
-            <span>Archive</span>
-            <span>Contact Us</span>
+      <section className="featured-topics">
+        <div className="featured-topics__content">
+          <h3 className="featured-topics__content-title">Featured Topics</h3>
+          <div className="featured-topics__cards-wrapper">
+            <div className="featured-topics__card">
+              <img src={beautiful} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  A beautiful solo trip to the Lake Baikal
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
+            <div className="featured-topics__card">
+              <img src={incredible} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  Incredible architecture inspired by nature
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
+            <div className="featured-topics__card">
+              <img src={richard} className="featured-topics__card-img" />
+              <div className="featured-topics__card-img-hover"></div>
+              <div className="featured-topics__card-content">
+                <span className="featured-topics__card-content_date">
+                  29.Jun.2021
+                </span>
+                <h5 className="featured-topics__card-content_title">
+                  Richard Norton photorealistic rendering as real photos
+                </h5>
+                <p className="featured-topics__card-content_subject">
+                  Leather detail shoulder contrastic colour contour stunning
+                  silhouette working peplum.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div></div>
-        <div>
+        <div className="featured-topics__second-content">
+          <div className="featured-topics__second-content-wrapper">
+            <h4 className="featured-topics__second-content-title">
+              20 unexpected destinations for your next trip
+            </h4>
+            <p className="featured-topics__second-content-subject">
+              Black knicker lining concealed back zip fasten swing style high
+              waisted double layer full pattern floral.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footer">
+        <div className="footer-nav">
+          <h7 className="footer-nav__logo">
+            VENCE Studio<span>.</span>
+          </h7>
+          <div>
+            <span className="footer-nav_item">About Studio</span>
+            <span className="footer-nav_item">Archive</span>
+            <span className="footer-nav_item">Contact Us</span>
+          </div>
+        </div>
+        <div className="footer-line"></div>
+        <div className="footer-nav">
           <span>1088, North Street, Alexandria, AU</span>
           <span>© 2022, All Rights Reserved</span>
         </div>
