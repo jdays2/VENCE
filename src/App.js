@@ -10,11 +10,10 @@ import renzo from "./assets/img/renzo.png";
 import beautiful from "./assets/img/aBeautiful.png";
 import incredible from "./assets/img/incredible.png";
 import richard from "./assets/img/richard.png";
-import sliderOne from "./assets/img/sliderImg.png";
-import sliderTwo from "./assets/img/sliderImg2.png";
-import sliderTree from "./assets/img/sliderImg3.png";
-
-import sample1 from "./assets/img/109164.png";
+import adventures from "./assets/img/adventures.png";
+import ultimate from "./assets/img/ultimate.png";
+import artist from "./assets/img/artist.png";
+import peter from "./assets/img/peter.png";
 
 function App() {
   return (
@@ -240,6 +239,75 @@ function App() {
               Black knicker lining concealed back zip fasten swing style high
               waisted double layer full pattern floral.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="another-articles">
+        <div className="another-articles__content-wrapper">
+          <p className="another-articles__title">It’s a Big World</p>
+          <div className="another-articles__cards-wrapper">
+            <div className="another-articles__card">
+              <img src={artist} className="card_img" />
+              <div className="another-rticles__card-hover"></div>
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="card_content">
+                <span className="card_date">29.Jun.2021</span>
+                <h7 className="card_title">
+                  Artist Melissa Kitty Jarram is updating Greek myths for 2022
+                </h7>
+                <p className="card_subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+            </div>
+            <div className="another-articles__card">
+              <img src={adventures} className="card_img" />
+              <div className="another-rticles__card-hover"></div>
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="card_content">
+                <span className="card_date">29.Jun.2021</span>
+                <h7 className="card_title">
+                  10 adventures to have in North America
+                </h7>
+                <p className="card_subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+            </div>
+            <div className="another-articles__card">
+              <img src={ultimate} className="card_img" />
+              <div className="another-rticles__card-hover"></div>
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="card_content">
+                <span className="card_date">29.Jun.2021</span>
+                <h7 className="card_title">
+                  The ultimate guide to driving Iceland Golden Circle
+                </h7>
+                <p className="card_subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+            </div>
+            <div className="another-articles__card">
+              <img src={peter} className="card_img" />
+              <div className="another-rticles__card-hover"></div>
+              <div className="articles__card-category">CREATIVE</div>
+              <div className="card_content">
+                <span className="card_date">29.Jun.2021</span>
+                <h7 className="card_title">
+                  Peter Funch shares the photo books that inspire his own
+                  practice
+                </h7>
+                <p className="card_subject">
+                  Many years ago, I worked for my parents who own a video
+                  production company.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
